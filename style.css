@@ -8,8 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Nvevation bar */
+
 header {
-    background-color: rgb(214, 214, 214);
+    background-color: #E4E8F0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,41 +22,50 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: white;
-    /* padding: 5px 15px; */
+    height: 4rem;
+    /* background: white; */
     box-shadow: 0 2px 5px rgb(28, 147, 252);
     transition: 0.3s ease, box-shadow 0.3s ease;
     z-index: 99;
 }
 
 header .logo-1 img {
-    width: 90px;
-    height: 70px;
-    margin-left: 30px;
+    width: 5rem;
+    height: 5rem;
+    margin-left: 50px;
     cursor: pointer;
 }
 
-nav {
+ul {
     width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-weight: 800;
     font-size: 16px;
+    font-weight: 500;
     position: relative;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
 }
 
-nav a {
+ul a {
     cursor: pointer;
     text-decoration: none;
     color: black;
-    font-size: 20px;
-    /* background-color: red; */
-    
-    padding: 17px 30px;
+    font-size: 15px;
 }
-a.frstLINK {
-    border-left: solid rgb(228, 234, 239) 2px;
+
+ul a.actif::before,
+ul a:hover::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    height: 2px;
+    width: 33px;
+    background: #000;
+}
+
+/* a.frstLINK {
     color: rgb(54, 64, 120);
 }
 
@@ -73,22 +84,20 @@ a.tLINK:hover {
 a.frstLINK::after {
     content: '';
     padding: 1px;
-    padding-top: 3px;
-    padding-left: 15px;
-    padding-right: 15px; 
+    width: 2rem;
+    height: 0.05rem;
     background-color: rgb(54, 64, 120);
     position: absolute;
-    top: 45px;
-    left: 50px;
+    top: 40px;
+    left: 53px;
     border-radius: 15px;
 }
 
 a.tLINK:hover::after {
     content: '';
     padding: 1px;
-    padding-top: 3px;
-    padding-left: 15px;
-    padding-right: 15px; 
+    width: 2rem;
+    height: 0.05rem;
     background-color: rgb(54, 64, 120);
     position: absolute;
     bottom: 10px;
@@ -98,45 +107,42 @@ a.tLINK:hover::after {
 }
 a.scndLINK:hover::after {
     content: '';
-    background-color: #000;
     position: absolute;
     padding: 1px;
-    padding-top: 3px;
-    padding-left: 15px;
-    padding-right: 15px; 
+    width: 2rem;
+    height: 0.05rem;
     background-color: rgb(54, 64, 120);
     position: absolute;
     bottom: 10px;
     right: 400px;
     border-radius: 15px; 
     transition: 2s ease;
-} 
+}   */
 
-nav button {
+ul button {
     padding: 5px 30px;
-    background-color: rgb(54, 64, 120);
+    background-color: #082F79;
     border-radius: 3px;
     border: none;
     color: white;
     transition: background-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
+    border: 1px #082F79 solid;
 }
 
-nav button:hover {
+ul button:hover {
     background-color: white;
     color: rgb(54, 64, 120);
     border: 1px rgb(54, 64, 120) solid;
 }
 
+/* Page d'accueil */
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(images/bgr.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* margin-bottom: 75px; */
+    background-color: white;
     height: 100vh;
 }
 
@@ -151,11 +157,11 @@ main section {
 }
 
 main section h3 {
-    color: rgb(46, 76, 150);
+    color: #043695;
     font-size: 60px;
-    font-family: 'Sacramento';
+    font-weight: 500;
+    font-family: 'Sacramento', cursive;
     text-align: center;
-
 }
 
 main section h2 {
@@ -164,19 +170,14 @@ main section h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* font-weight:900; */
-    /* word-spacing: 20px; */
 
     text-align: center;
-    font-family: "Anton", sans-serif;
+    font-family: 'Titan One', cursive;
     font-weight: 400;
     font-style: normal;
 }
 
 section button {
-    /* padding: 10px 40px;
-    border-radius: 15px;
-    background-color: rgb(233, 242, 255); */
     padding: 10px 20px;
     border: 2px solid #A0B3D6; /* light blue border */
     background-color: white;
@@ -203,12 +204,9 @@ main section img {
     top: 70px;
     height: 120px;
     width: 120px;
-    /* top: 100px;
-    left: 100px; */
 }
 
 .ch2 {
-    /* position: absolute; */
     position: absolute;
     right: 50px;
     height: 200px;
@@ -222,12 +220,9 @@ main section img {
     top: 150px;
     height: 200px;
     width: 200px;
-    /* top: 100px;
-    left: 100px; */
 }
 
 .ch4 {
-    /* position: absolute; */
     position: absolute;
     right: 250px;
     height: 180px;
@@ -236,7 +231,6 @@ main section img {
 }
 
 .ch5 {
-    /* position: absolute; */
     position: absolute;
     right: 290px;
     height: 130px;
@@ -246,27 +240,12 @@ main section img {
 
 
 .ch6 {
-    /* position: absolute; */
     position: absolute;
     right: 900px;
     height: 180px;
     width: 180px;
     top: 370px;
 }
-
-/* .hidden {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-    
-.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-   */
 
 .hidden {
     opacity: 0;
@@ -296,86 +275,3 @@ main section img {
     background-color: #fff;
 }
 
-/* =============  About  ======= */
-
-section.about {
-    background-color: rgb(230, 230, 230);
-    height: 90vh;
-    width: 100%;
-}
-
-section.about .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25vh;
-    width: 100%;
-}
-
-section.about .title h3 {
-    font-size: 50px;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(54, 64, 120);
-    
-}
-
-.cards {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: start;
-    height: 60vh;
-    gap: 10px;
-}
-
-.card img {
-    height: 100px;
-    width: 100px;
-}
-
-.card .imag {
-    display: flex;
-    justify-content: center;
-
-}
-
-.card .desc {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    gap: 15px;
-
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    width: 22.5%;
-    background-color: rgb(54, 64, 120);
-    gap: 10px;
-    height: auto;
-    min-height: 50vh;
-    min-width: 290px;
-    border-radius: 15px;
-    color: white;
-    padding: 0 20px;
-    transition: ease 0.5s;
-}
-
-.card .imag i {
-    font-size: 40px;
-    padding: 15px 0;
-    transition: 0.9s ease, transform 0.3s ease;
-
-}
-
-.card:hover {
-    scale: 1.06;
-
-}
-
-.card:hover i {
-    color: rgb(106, 180, 229);
-}
