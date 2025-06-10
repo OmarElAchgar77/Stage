@@ -13,3 +13,12 @@ let loader = document.getElementById('preloader');
 window.addEventListener("load", function() {
     loader.style.display = 'none' ;
 })
+
+// ScrollReveal({
+//     reset: true,
+//     distance: '80px',
+//     duration: 2000,
+//     delay: 200
+// });
+
+// ScrollReveal().reveal('.about-info', { origin: 'top'});
