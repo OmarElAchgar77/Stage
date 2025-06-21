@@ -660,7 +660,7 @@ img.i14 {
     display: flex;
     justify-content: center;
     border-radius: 90px;
-    gap: 50px;
+    gap: 40px;
     z-index: 7;
 }
 
