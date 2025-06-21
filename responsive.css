@@ -313,6 +313,12 @@
 
     /* ==== sponseur ====================== */
 
+
+    .sponseur .title h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
     .imgs-line2 img,
     .imgs-line1 img {
         width: 100px;
@@ -350,6 +356,10 @@
         padding-top: 40px;
     }
 
+    .footer-info .parti2 p {
+        text-align: center;
+    }
+
     /* === footer ========================== */
 
     .footer-info {
@@ -369,4 +379,16 @@
     .footer-info .parti1 {
         text-align: center;
     }
+
+    .footer-title p {
+        font-size: 35px;
+    }
+
+    .ecol-title {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+
 }
