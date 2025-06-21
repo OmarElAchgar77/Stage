@@ -1,6 +1,6 @@
 /* ====== responsive: small device  ================= */
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
 
     header {
         padding: 0 0px;
@@ -80,16 +80,34 @@
 
     .paper {
         left: 0px;
-        width: 110px;
+        width: 10vh;
         height: 110px;
         top: 170px;
     }
 
     .tree-chaps-in-right {
-        top: 120px;
+        top: 10vh;
         right: 0;
         height: 180px;
         width: 130px;
+    }
+
+    main section h3 {
+        font-size: 50px;
+    }
+
+    main section h2 {
+        color: black;
+        /* font-size: 7vw; */
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        font-family: 'Titan One', cursive;
+        font-weight: 400;
+        font-style: normal;
     }
 
     /* ==== About =======  ====== */
@@ -98,28 +116,40 @@
         display: flex;
         background-color: #D3E2F9;
         width: 100%;
-        height: 100vh;
         align-items: center;
         justify-content:center
     }
 
     .about .img-about img {
-        width: 280px;
-        height: 280px;
+        width: 50vw;
+        height: 25vh;
     }
 
     .about .about-info {
         width: 90%;
-        font-size: 50px;
+        font-size: 50rem;
     }
 
     .about-info p {
-        font-size: 33px;
+        font-size: 25px;
     }
 
     /* ===== Services ============================ */
 
+    .services .ser-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 20px 0px;
+    }
 
+    .services .ser-head h2 {
+        font-size: 50px;
+        width: 170px;
+        text-align: end;
+        color: #092C6F;
+    }
 
     .img-bckgrd {
         display: none;
@@ -142,8 +172,8 @@
         justify-content: space-between;
         align-items: center;
         background-color: #eff3fff6;
-        width: 370px;
-        height: 35vh;
+        width: 350px;
+        height: 50vh;
         border: 1px solid #082F79;
         border-radius: 20px;
         padding: 0 0px;
@@ -184,7 +214,7 @@
         border: 1px solid #FFA735;
         border-radius: 20px;
         padding: 0px 0px;
-        width: 370px;
+        width: 350px;
     }
 
     .premuim-img {
@@ -207,8 +237,9 @@
     .acce-premium .cont p {
         width: 300px;
         font-weight: 100;
-        font-size: 25px;
+        font-size: 20px;
         letter-spacing: 2px;
+        margin-bottom: 30px;
     }
 
     /* == enteprise part == */
@@ -221,7 +252,7 @@
         border: 1px solid #082F79;
         border-radius: 20px;
         gap: 30px;
-        width: 370px;
+        width: 350px;
         
     }
 
@@ -276,6 +307,12 @@
         font-weight: 300;
     }
 
+    .enrep2 p i {
+        display: inline;
+    }
+
+    /* ==== sponseur ====================== */
+
     .imgs-line2 img,
     .imgs-line1 img {
         width: 100px;
@@ -296,5 +333,40 @@
         align-items: center;
         width: 100%;
         gap: 150px;
+    }
+
+    .imgs-line1, .imgs-line2 {
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+        justify-content: center; /* Center the images */
+        gap: 50px;
+    }
+
+    .sponseur .title h1 {
+        text-align: center;
+    }
+
+    .imgs-line2 {
+        padding-top: 40px;
+    }
+
+    /* === footer ========================== */
+
+    .footer-info {
+        flex-direction: column;
+    }
+
+    .footer-prnt {
+        background-color: #E4E8F0;
+        padding: 40px 0;
+        border-radius: 90px 90px 0 0;
+        width: 100%;
+        box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.2);
+        position: relative;
+        top: 100px;
+    }
+
+    .footer-info .parti1 {
+        text-align: center;
     }
 }
