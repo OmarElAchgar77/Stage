@@ -13,19 +13,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <div id="preloader"></div>
     <header>
         <div class="logo-1"><a href="index.html" title="Home"><img src="images/logo.png" alt=""></a></div>
-        <ul>
+        <ul id="navbar">
             <li><a class="accueil actif" href="index.html">Accueil</a></li>
             <li><a class="offres" href="">Offres de stages</a></li>
             <li><a class="contact" href="">Contact</a></li>
             <li><button>sign in</button></li>
+            <i id="close" class="fa-solid fa-xmark fa-spin" style="color: #104094;"></i>
         </ul>
+        <div class="mobile">
+            <a href=""><button>sign in</button></a>
+            <i id="bar" class="fa-solid fa-bars" style="color: #082f78;"></i>
+        </div>
     </header>
     <main class="hidden">
         <section >
@@ -33,7 +38,7 @@
             <h3>Bghiti Stage?</h3>
             <h2>STAGE CONNECT</h2>
             <img class="img2" src="images/logo-2.png" alt="">
-            <button>en savoir plus</button>
+            <a href="index.html"><button>en savoir plus</button></a>
         </section>
         <img src="images/two_person_looking.png" alt="" class="min-imgs per-looking">
         <img src="images/lot-chap.png" alt="" class="min-imgs lot-chaps">
@@ -84,6 +89,7 @@
         <div class="cards">
             <div class="acce-stand">
                 <div class="part1">
+                    <img src="images/acces-stand.png" alt="" class="stand-img">
                     <h5>Accès standard :</h5>
                     <h6> Consultation des offres de stages disponibles.</h6>
                 </div>
@@ -97,6 +103,7 @@
             </div>
             <div class="acce-premium">
                 <div class="cont">
+                    <img src="images/acces-premuim.png" alt="" class="premuim-img">
                     <h5>Accès premium :</h5>
                     <p class="par1">
                         Création et optimisation de: 
