@@ -39,7 +39,7 @@
     }
 
     header .mobile button {
-        padding: 12px 30px;
+        padding: 5px 15px;
         font-size: 20px;
     }
 
@@ -151,7 +151,14 @@
         color: #092C6F;
     }
 
-    .img-bckgrd {
+    .img-bckgrd .i2,
+    .img-bckgrd .i10,
+    .img-bckgrd .i12,
+    .img-bckgrd .i13,
+    .img-bckgrd .i4,
+    .img-bckgrd .i5,
+    .img-bckgrd .i7,
+    .img-bckgrd .i9 {
         display: none;
     }
 
@@ -543,5 +550,146 @@
     .imgs-line2,
     .imgs-line1 {
         gap: 4%;
+    }
+}
+
+/*%%%%%%%%%%% Page Offer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+/* Respnsive for tablette */
+
+@media (max-width: 769px) {
+    .allOffer-ad {
+        display: flex;
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
+    .allOffer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        row-gap: 10px;
+        padding-right: 0px;
+        order: 2;
+    }
+
+    .filter-ad {
+        order: 1;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .offer {
+        display: flex;
+        gap: 20vw;
+        background-color: #FCFDFF;
+        align-items: center;
+        border-radius: 15px;
+        padding: 0px 0px;
+        color: #082F79;
+        text-decoration: none;
+        
+    }
+
+    .offer .img-logo {
+        background-color: white;
+        padding: 40px;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 15px 0 0  15px;
+    }
+
+    .offer .info-offer h3 {
+        font-size: 30px;
+    }
+
+    .offer .info-offer p {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .filter  {
+        order: 2;
+    }
+
+    .ad {
+        order: 1;
+        height: 70%;
+        width: 100% ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 0px;
+        background-color: #fff;
+        padding: 20px 20px;
+        row-gap: 0px;
+        column-gap: 1.5vw;
+        margin-bottom: 15px;
+    }
+
+    .ad h2 {
+        font-size: 20px;
+    }
+
+    .offers {
+        padding-bottom: 0px;
+    }
+
+    .offers .Title h1 {
+        font-size: 40px;
+    }
+}
+
+/* Respnsive for tablette */
+
+@media (max-width: 425px) {
+
+    .ad h2 {
+        font-size: 10px;
+    } 
+
+    .offers .Title h1 {
+        font-size: 33px;
+        text-wrap: wrap;
+    }
+    
+    .offer .info-offer h3 {
+        font-size: 25px;
+    }
+
+    .offer .info-offer p {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+        gap: 6vw;
+        background-color: #FCFDFF;
+        align-items: center;
+        border-radius: 15px;
+        padding: 20px 40px;
+        color: #082F79;
+        text-decoration: none;
+    }
+    
+    .offer .img-logo {
+        border-radius: 0;
+    }
+
+    .offers .Title {
+        padding-bottom: 0px;
+    }
+
+    .offers .Title h1 {
+        font-size: 30px;
+        flex-grow: 10px;
+    }
+
+    header .mobile button {
+        display: none;
     }
 }

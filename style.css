@@ -9,7 +9,7 @@ html {
     width: 100%;
 }
 
-/* Nvevation bar */
+/*==== Naevation bar =======================*/
 
 header {
     width: 100%;
@@ -53,7 +53,7 @@ ul {
 ul a {
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: #082F79;
     font-size: 20px;
     position: relative;
 }
@@ -64,7 +64,7 @@ ul a::before {
     top: 30px;
     height: 2px;
     width: 0px;
-    background: #000;
+    background: #082F79;
     transition: all 0.2s ease-in-out;
 }
 
@@ -75,7 +75,7 @@ ul a:hover::before {
     top: 30px;
     height: 3px;
     width: 38px;
-    background: #000;
+    background: #082F79;
     border-radius: 5px;
 }
 
@@ -852,3 +852,132 @@ img.i14 {
     width: 130px;
 }
 
+
+/*%%%%%%%%%%% Page Offer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=League+Script&family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=League+Script&family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header {
+    background: #fff;
+}
+
+.offers {
+    padding-top: 17vh;
+    padding-bottom: 50px;
+    background-color: #E4E8F0;
+}
+
+.offers .Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.offers .Title h1 {
+    font-size: 50px;
+    color: #092C6F;
+    font-family: "roboto", sans-serif;
+    font-weight: 700;
+}
+
+.allOffer-ad {
+    display: flex;
+    padding: 20px;
+}
+
+.filter-ad , .filter-ad ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.allOffer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    row-gap: 10px;
+    padding-right: 50px;
+}
+
+.offer {
+    display: flex;
+    gap: 20vw;
+    background-color: #FCFDFF;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px 40px;
+    color: #082F79;
+    text-decoration: none;
+}
+
+.offer .info-offer h3 {
+    font-size: 40px;
+}
+
+.offer .info-offer p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.offer .img-logo {
+    background-color: white;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.filter-ad {
+    width: 20%;
+    height: 100%;
+}
+
+.offer:nth-child(odd) {
+    background-color: #D3E2F9;
+}
+
+.offer:nth-child(even) .img-logo {
+    background-color: #D3E2F9;
+}
+
+.filter  {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    height: 30%;
+}
+
+.filter p {
+    text-decoration: underline;
+    padding-bottom: 5px;
+    font-weight: 800;
+}
+
+.filter-option {
+    background-color: #fff;
+    width: 90%;
+    padding: 10px 20px;
+    font-weight: 900;
+}
+
+.ad {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px 20px;
+    row-gap: 20px;
+}
+
+.ad h2 {
+    color:#043695;
+}
+
+.footer2 {
+    background-color:#E4E8F0;
+}
