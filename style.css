@@ -981,3 +981,16 @@ img.i14 {
 .footer2 {
     background-color:#E4E8F0;
 }
+
+
+/*%%%%%%%%%%% Page contact %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.footer-contact {
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.footer-prnt-contact {
+    border-radius: 90px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}

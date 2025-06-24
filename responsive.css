@@ -394,6 +394,19 @@
     .ecol-title {
         text-align: center;
     }
+    
+/*%%%%%%%%%%% Page contact %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+    .footer-contact {
+        height: 100vh;
+        padding-top: 40px;
+        background-color: #E4E8F0;
+    }
+
+    .footer-prnt-contact {
+        border-radius: 90px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
 }
 
 
@@ -642,7 +655,7 @@
     }
 }
 
-/* Respnsive for tablette */
+/* Respnsive for small devices */
 
 @media (max-width: 425px) {
 
@@ -692,4 +705,6 @@
     header .mobile button {
         display: none;
     }
+
+
 }
