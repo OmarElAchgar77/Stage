@@ -23,7 +23,7 @@
         <ul id="navbar">
             <li><a class="accueil" href="index.html">Accueil</a></li>
             <li><a class="offres" href="offers.html">Offres de stages</a></li>
-            <li><a class="contact actif" href="contact.html">Contact</a></li>
+            <li><a class="contact" href="contact.html">Contact</a></li>
             <li><a href="sign-in.html" class="sign-bnt"><button>sign in</button></a></li>
             <i id="close" class="fa-solid fa-xmark" style="color: #104094;"></i>
         </ul>
@@ -33,8 +33,49 @@
         </div>
     </header>
 
-    <section class="footer2 footer-contact">
-        <div class="footer-prnt footer-prnt-contact">
+    <main>
+        <form action="" class="sign">
+            <h1>Se connecter</h1>
+            <div id="btn-google" href="">
+                <a href="">
+                    <button type="button">
+                        <img src="images/google-logo.png" alt="">
+                        <p>Avec google</p>
+                    </button>
+                </a>    
+            </div>
+            <div id="avec-address">
+                <h6>Ou avec l’addresse email</h6>
+            </div>
+            <div class="label1 label">
+                <label for="email">Email: </label><br>
+                <input name="email" type="email" placeholder="">
+            </div>
+            <div class="label2 label">
+                <label for="pssw">Mot de passe: </label><br>
+                <div id="input-psswd">
+                    <input id="passwd" name="pssw" type="password" placeholder="">
+                    <img id="img-eye" onclick="togglePassword()" src="images/eyes.png" alt="">
+                </div>
+            </div>
+            <div class="souvenir-oublie">
+                <div class="seSouvenir">
+                    <input name="checkbox" type="checkbox" id="checkbox">
+                    <label for="checkbox">Se souvenir de moi</label>
+                </div>
+                <a href="">Mot de passe oublié?</a>
+            </div>
+            <div>
+                <button type="submit">Se connecter</button>
+            </div>
+            <div>
+                <h6>Première fois? <a href="">Inscrivez-vous gratuitement</a></h6>
+            </div>
+        </form>
+    </main>
+
+    <section class="footer2">
+        <div class="footer-prnt">
             <div class="footer-title">
                 <p>NOS CONTACT</p>
             </div>

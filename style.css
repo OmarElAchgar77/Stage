@@ -294,6 +294,8 @@ main section .img2 {
     height: 12%; */
 }
 
+.offers,
+.footer-contact,
 .hidden {
     opacity: 0;
     transform: translateY(20px);
@@ -993,4 +995,141 @@ img.i14 {
 .footer-prnt-contact {
     border-radius: 90px;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+/*%%%%%%%%%%% Page Sign in %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+main {
+    background-color: #E4E8F0;
+
+}
+
+main .sign {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 50vw;
+    /* height: 50vh; */
+    padding: 20px 30px;
+}
+
+#btn-google a {
+    text-decoration: none;
+}
+
+.sign h1 {
+    text-align: center;
+    color: #092C6F;
+}
+
+#btn-google,
+#btn-google button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-google button img {
+    width: 3vw;
+}
+
+#btn-google button p {
+    font-size: 16px;
+    color: #092C6F;
+    font-weight: 500;
+}
+
+#btn-google button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #082F79;
+    cursor: pointer;
+    column-gap: 6px;
+    margin: 15px 0;
+    background-color: #F3F7FF;
+}
+
+#avec-address h6 {
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    color: #092C6F;
+}
+
+#avec-address h6::before,
+#avec-address h6::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 35%; /* ajusté pour un bon équilibre */
+    height: 1px;
+    background-color: #000; /* gris clair, comme dans ton image */
+    transform: translateY(-50%);
+}
+
+#avec-address h6::before {
+    left: 0;
+}
+
+#avec-address h6::after {
+    right: 0;
+}
+
+.label {
+    margin: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.label label{
+    color: #092C6F;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.label input {
+    padding: 15px 20px;
+    margin-top: 7px;
+    width: 100%;
+    border: 1px solid #082F79;
+    border-radius: 15px;
+    background-color: #F3F7FF;
+    color: #082e75;
+}
+
+.label input:focus {
+    outline-color: #082F79;
+}
+
+.souvenir-oublie {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+}
+
+.seSouvenir {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seSouvenir input {
+
+}
+
+#checkbox {
+    transform: scale(1.5); /* Increase size */
+    margin-right: 10px;
+}
+
+#input-psswd img {
+    width: 35px;
+    position: absolute;
+    right: 20px;
+    bottom: 6px;
+}
+
+#input-psswd {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
