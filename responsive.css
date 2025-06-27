@@ -706,3 +706,152 @@
         display: none;
     }
 }
+
+/*%%%%%%%%%%% Page Sign in %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media (max-width: 1024px) {
+
+    main {
+        height: 100vh;
+        padding-top: 10vh;
+    }
+
+    main .sign {
+        width: 90vw;
+        height: 70vh;
+    }
+
+    main form {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .sign h1 {
+        font-size: 80px;
+    }
+
+    #btn-google button img {
+        width: 60px;
+    }
+
+    #btn-google button p {
+        font-size: 35px;
+        font-weight: 100;
+    }
+
+    #btn-google button {
+        padding: 10px 20px;
+    }
+
+    #avec-address p {
+        font-size: 1.7em;
+    }
+
+    #avec-address p::before,
+    #avec-address p::after {
+        width: 20%; /* ajusté pour un bon équilibre */
+    }
+
+    .label label{
+        font-size: 40px;
+    }
+
+    .label input {
+        padding: 2vh 20px;
+        margin-top: 7px;
+        width: 100%;
+        padding-right: 60px;
+        font-size: 30px;
+    }
+
+    .souvenir-oublie {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 40px;
+        font-size: 23px;
+    }
+
+    #checkbox {
+        transform: scale(2); /* Increase size */
+        margin-right: 20px;
+    }
+
+    #input-psswd img {
+        width: 60px;
+    }
+
+    .bnt-connecter button {
+        padding: 15px 40px;
+        font-size: 25px;
+    }
+
+    #txt-inscris-vous p {
+        font-size: 23px;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 440px) {
+
+    main {
+        height: 100vh;
+        padding-top: 14vh;
+        background-color: #fff;
+    }
+
+    main .sign {
+        width: 100vw;
+        height: 90vh;
+        padding: 20px 0px;
+        padding-top: 0;
+    }
+
+    .sign h1 {
+        font-size: 58px;
+    }
+
+    #btn-google button img {
+        width: 40px;
+    }
+
+    #btn-google button p {
+        font-size: 25px;
+    }
+
+    #avec-address p {
+        font-size: 1.2em;
+        letter-spacing: 2px;
+    }
+
+    #avec-address p::before,
+    #avec-address p::after {
+        width: 11%; /* ajusté pour un bon équilibre */
+    }
+
+    .label label{
+        font-size: 35px;
+    }
+
+    .label input {
+        padding: 2vh 20px;
+        margin-top: 7px;
+        width: 100%;
+        padding-right: 60px;
+        font-size: 30px;
+    }
+
+    .souvenir-oublie {
+        margin: 0px 10px;
+        font-size: 20px;
+    }
+
+    #txt-inscris-vous p {
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin: 0 0;
+    }
+
+    .footer-signUp {
+        background-color: #fff;
+    }
+}

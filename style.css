@@ -1001,7 +1001,8 @@ img.i14 {
 
 main {
     background-color: #E4E8F0;
-
+    height: 110vh; 
+    /* padding-top: 12vh; */
 }
 
 main .sign {
@@ -1009,8 +1010,8 @@ main .sign {
     flex-direction: column;
     background-color: #FFF;
     width: 50vw;
-    /* height: 50vh; */
     padding: 20px 30px;
+    color: #082e75;
 }
 
 #btn-google a {
@@ -1019,7 +1020,7 @@ main .sign {
 
 .sign h1 {
     text-align: center;
-    color: #092C6F;
+    font-size: 40px;
 }
 
 #btn-google,
@@ -1049,29 +1050,30 @@ main .sign {
     background-color: #F3F7FF;
 }
 
-#avec-address h6 {
+#avec-address p {
     text-align: center;
     position: relative;
-    font-size: 15px;
+    font-size: 1em;
     color: #092C6F;
 }
 
-#avec-address h6::before,
-#avec-address h6::after {
+#avec-address p::before,
+#avec-address p::after {
     content: "";
     position: absolute;
     top: 50%;
-    width: 35%; /* ajusté pour un bon équilibre */
+    width: 31%; /* ajusté pour un bon équilibre */
     height: 1px;
-    background-color: #000; /* gris clair, comme dans ton image */
+    background-color: #082F79;
+    opacity: 23%; /* gris clair, comme dans ton image */
     transform: translateY(-50%);
 }
 
-#avec-address h6::before {
+#avec-address p::before {
     left: 0;
 }
 
-#avec-address h6::after {
+#avec-address p::after {
     right: 0;
 }
 
@@ -1094,6 +1096,7 @@ main .sign {
     border-radius: 15px;
     background-color: #F3F7FF;
     color: #082e75;
+    padding-right: 60px;
 }
 
 .label input:focus {
@@ -1103,7 +1106,8 @@ main .sign {
 .souvenir-oublie {
     display: flex;
     justify-content: space-between;
-    margin: 0 40px;
+    margin: 10px 40px;
+    font-size: 14px;
 }
 
 .seSouvenir {
@@ -1112,13 +1116,14 @@ main .sign {
     align-items: center;
 }
 
-.seSouvenir input {
-
+#checkbox {
+    transform: scale(1.1); /* Increase size */
+    margin-right: 10px;
 }
 
-#checkbox {
-    transform: scale(1.5); /* Increase size */
-    margin-right: 10px;
+.souvenir-oublie a {
+    color: #082F79;
+
 }
 
 #input-psswd img {
@@ -1132,4 +1137,28 @@ main .sign {
     position: relative;
     display: flex;
     align-items: center;
+}
+
+.bnt-connecter {
+    display: flex;
+    justify-content: end;
+    margin: 5px 20px;
+}
+
+.bnt-connecter button {
+    padding: 10px 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: #082e75;
+    color: #E4E8F0;
+    cursor: pointer;
+}
+
+#txt-inscris-vous p {
+    text-align: center;
+    font-size: 14px;
+}
+
+#txt-inscris-vous p a {
+    color: #082F79;
 }
